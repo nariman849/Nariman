@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyCv</a>
+            </div>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="#personal-info">Personal Information</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+            <div class="humburger" id="humburger" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <div class="img-area">
+                <img src="c:\Users\Sarah Khidr\Desktop\photo_2024-12-15_01-58-58.jpg" width="200" height="200" alt="Profile picture">
+            </div>
+            <h1>Nariman Ali</h1>
+            <h3>BIS Student</h3>
+        </div>
+        <div class="main">
+            <div class="left">
+                <h2 id="personal-info">Personal Information</h2>
+                <p><strong>Name:</strong> Nariman Ali Hassan</p>
+                <p><strong>Age:</strong> 22</p>
+                <p><strong>Email:</strong> narimanalihassan@gmail.com</p>
+                <p><strong>Phone:</strong> 01007426028</p>
+                <h2 id="education">Education</h2>
+                <h3>Faculty Of Commerce BIS Department</h3>
+                <p><strong>GPA:</strong> Very Good</p>
+            </div>
+            <div class="right">
+                <h2 id="courses">Courses</h2>
+                <ul>
+                    <li>Trainee at Banque Misr - Aug 2024 to Sep 2024</li>
+                    <li><strong>Round 1:</strong> Three-week online "Future Employee for the Digital Era" training at CIB - July 2023</li>
+                    <li><strong>Round 2:</strong> One-week online bootcamp on "Financial Inclusion & Sustainability" training at CIB - Aug 2023</li>
+                    <li>Training course and developed a final project for a potential startup - Feb 2024</li>
+                    <li>Sales and marketing training at El-Abd Sporting Club - 23 Dec 2024 to 28 Dec 2024</li>
+                </ul>
+                <h2 id="skills">Skills</h2>
+                <ul>
+                    <li>Arabic: Mother tongue</li>
+                    <li>English: Good</li>
+                    <li>HTML, CSS</li>
+                    <li>Problem-solving</li>
+                    <li>Great communication and teamwork</li>
+                    <li>Working under pressure</li>
+                </ul>
+                <h2 id="activities">Activities</h2>
+                <ul>
+                    <li>Attended the educational session titled "Key Strategies for Entering the Job Market"</li>
+                    <li>Volunteered in Resala community for 2 years</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglemenu() {
+            const navlinks = document.getElementById("navlinks");
+            navlinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
